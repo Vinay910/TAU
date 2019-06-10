@@ -1,0 +1,14 @@
+package operators;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		int result=10;		
+		System.out.println(result%3);//
+		System.out.println(result/3);
+		System.out.println(result+3);
+		System.out.println(result-3);
+		System.out.println(result*3);
+	}
+
+}

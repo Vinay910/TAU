@@ -1,0 +1,12 @@
+package charAndBoolean;
+
+public class Main {
+
+	public static void main(String[] args) {
+		char ch='\u00A1';
+		boolean flag=true;
+		System.out.println(ch);
+		System.out.println(flag); 
+	}
+
+}

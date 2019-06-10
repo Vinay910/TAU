@@ -1,0 +1,24 @@
+
+public class Main {
+	
+	public static void main(String []args)
+	{
+		int myMinValue=-2_147_483_648;//32
+		int myMaxValue=2_147_483_647;
+		byte myMinByteValue=-128;//8
+		byte myMaxByteValue=127;
+		byte mydivbyte=(byte) (myMaxByteValue/2);
+		short myMinShortValue=-32768;//16
+		short myMaxShortValue=32767;
+		short mydivshort=(short) (myMaxShortValue/2);
+		long myLongValue=100L;//64
+		byte b=1;
+		short s=2;
+		int i=1;
+		long l=200L;
+		long cal=(50000+10*(b+s+i));
+		System.out.println(cal);
+		
+	}
+	
+}
