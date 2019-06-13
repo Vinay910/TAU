@@ -1,0 +1,24 @@
+package com.DecimalComparator;
+
+
+
+public class DecimalComparator {
+
+public static boolean areEqualByThreeDecimalPlaces(double one,double two)
+{
+	String pattern="###.##";
+	DecimalFormat df=new DecimalFormat(one);
+	String roundone=df.format(pattern);
+	DecimalFormat df=new DecimalFormat(two);
+	String roundtwo=df.format(pattern);
+	if(roundone.equals(roundtwo))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+}

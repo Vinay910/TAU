@@ -1,0 +1,23 @@
+
+package ifkeyword;
+
+public class IfKeyword {
+	
+	public static void main(String []args)
+	{
+		scoreCalculator(100,10,true,200);
+		scoreCalculator(10000,10,true,200);
+	}
+	public static void scoreCalculator(int score,int level,boolean gameover,int bonus)
+	{
+			if(gameover)
+			{
+				int finalscore=score+(level*bonus);
+				System.out.println("Your first score was " +finalscore);
+			}
+			
+	}
+
+	
+
+}

@@ -1,0 +1,39 @@
+package com.SecondsAndMinutes;
+
+public class SecondsAndMinute {
+	
+	public static String getDurationString(int minutes,int seconds)
+	{
+		if(minutes>=0&&seconds>=0&&seconds<=59)
+		{
+			int h=minutes/60;
+			int m=minutes/(h*60);
+			return h+"h "+m+"m "+seconds+"s";
+			
+		}
+		else
+		{
+			return "Invalid Value";
+		}
+	}
+	public static String getDurationString(int seconds)
+	{
+		if(seconds>=0)
+		{
+		 int m=seconds/60;
+		int sec=seconds/(m*60);
+		return getDurationString(m,sec);
+		}
+		else
+		{
+			return "Invalid Value";
+		}
+		
+	}
+
+	public static void main(String []args)
+	{
+		System.out.println(getDurationString(3600));
+	}
+}
+

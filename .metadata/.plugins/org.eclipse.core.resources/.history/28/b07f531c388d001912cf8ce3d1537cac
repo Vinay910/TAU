@@ -1,0 +1,23 @@
+package com.DecimalComparator;
+
+
+public class DecimalComparator {
+
+	public static boolean areEqualByThreeDecimalPlaces(double one,double two)
+	{
+		if(round(one,2)==round(two,2))
+		return true;
+		else
+		return false;
+	}
+	public static double round(double value,int places)
+	{
+		double scale = Math.pow(10, places);
+		return Math.round(value * scale);
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println(areEqualByThreeDecimalPlaces(1.9999,1.99998));
+	}
+}

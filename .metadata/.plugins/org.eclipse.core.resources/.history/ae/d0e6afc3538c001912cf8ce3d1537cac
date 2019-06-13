@@ -1,0 +1,20 @@
+
+package ifkeyword;
+
+public class IfKeyword {
+	
+	public static void main(String []args)
+	{
+		int score=10000;
+		int level=8;
+		boolean gameover=true;
+		int bonus=200;
+		if(gameover)
+		{
+			int finalscore=score+(level*bonus);
+			System.out.println("Your first score was " +finalscore);
+		}
+		
+	}
+
+}

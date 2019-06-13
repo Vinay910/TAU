@@ -1,0 +1,35 @@
+package com.methodOverloading;
+
+public class MethodOverloading {
+
+public static double calcFeetAndInchesToCentimeters(double feet,double inches)
+{
+	if(feet>=0&&(inches>=0&&inches<=12))
+	{
+		return feet*30.48+inches*2.54;
+	}
+	else
+	{
+		return -1D;
+	}
+}
+public static double calcFeetAndInchesToCentimeters(double inches)
+{
+	if(inches>=0)
+	{
+		double feet=inches/12;
+		double inc=inches%12;
+		return calcFeetAndInchesToCentimeters(feet,inc);
+	}
+	else
+	{
+		return -1D;
+	}
+}
+
+public static void main(String[] args)
+{
+	System.out.println(calcFeetAndInchesToCentimeters(100));
+	System.out.println(calcFeetAndInchesToCentimeters(-1,5));
+}
+}

@@ -1,0 +1,27 @@
+
+package ifkeyword;
+
+public class IfKeyword {
+	
+	public static void main(String []args)
+	{
+		int result;
+		result=scoreCalculator(100,10,true,200);
+		System.out.println(result);
+		result=scoreCalculator(10000,10,true,200);
+		System.out.println(result);
+	}
+	public static int scoreCalculator(int score,int level,boolean gameover,int bonus)
+	{
+		int finalscore = -1;
+			if(gameover)
+			{
+				finalscore=score+(level*bonus);
+				
+			}
+		return finalscore;
+	}
+
+	
+
+}
