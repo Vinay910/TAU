@@ -1,0 +1,30 @@
+package com.FlourPackProblem;
+
+public class FlourPackProblem {
+	
+	public static boolean canPack(int bigCount,int smallCount,int goal)
+	{
+		if(bigCount>=0&&smallCount>=0&&goal>=0)
+		{
+			int bigsum=bigCount*5;
+			if(bigsum==goal)
+			{
+				return true;
+			}
+			else if(bigsum<goal&&smallCount>0)
+			{
+				bigsum=bigsum+smallCount;
+				if(bigsum<=goal)
+				{
+					return true;
+				}
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.LargestPrime;
+
+public class LargestPrime {
+	public static int getLargestPrime(int number)
+	{
+		int prime=0;
+		if(number>1)
+		{
+			for(int i=2;i<number;i++)
+			{
+				for(int j=i;j>2;j--)
+				{
+					if(j%i!=0)
+					{
+						prime=i;
+					}
+				}
+			}
+			return prime;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	public static void main(String[] args)
+	{
+		System.out.println(getLargestPrime(45));
+	}
+
+}
+

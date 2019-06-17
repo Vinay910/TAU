@@ -1,0 +1,38 @@
+package com.LargestPrime;
+
+public class LargestPrime {
+	public static int getLargestPrime(int number)
+	{
+		if(number>0)
+		{
+			int temp=0,rem=0;
+			for(int j=2;j<=number;j++)
+			{
+				if(number%j!=0)
+				{
+					for(int i=2;i<number;i++)
+					{
+						if(number%i==0)
+						{
+							temp=i;
+						}
+					}	
+				}
+			}
+			if(number==1)
+				{
+					return number;
+				}
+			return temp;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	public static void main(String[] args)
+	{
+		getLargestPrime(45);
+	}
+
+}

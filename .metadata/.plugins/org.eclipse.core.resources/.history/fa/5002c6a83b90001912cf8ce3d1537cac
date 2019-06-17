@@ -1,0 +1,32 @@
+package com.InputCalculator;
+import java.util.Scanner;
+
+public class InputCalculator {
+	
+	public static void inputThenPrintSumAndAverage()
+	{
+		Scanner s=new Scanner(System.in);
+		int x=0,y=0,count=0;
+		boolean flag=true;
+		while(flag)
+		{
+			flag=s.hasNextInt();
+			if(flag==false)
+			{
+				break;
+			}
+			int a=s.nextInt();
+			x=x+a;
+			count++;
+		}
+		y=x/count;
+		System.out.println("SUM = "+x+" AVG = "+y);
+		s.close();
+	}
+	
+	public static void main(String[] args)
+	{
+		inputThenPrintSumAndAverage();
+	}
+
+}
