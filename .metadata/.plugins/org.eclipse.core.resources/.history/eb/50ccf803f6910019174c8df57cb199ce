@@ -1,0 +1,20 @@
+package com.VipCustomer;
+
+public class VipCustomer {
+
+	private String name;
+	private int creditLimit;
+	private String email;
+	public VipCustomer(String name, int creditLimit, String email) {
+		this.name = name;
+		this.creditLimit = creditLimit;
+		this.email = email;
+	}
+	private VipCustomer(int creditLimit, String email) {
+		this("Vinayak",creditLimit,email);
+	}
+	private VipCustomer() {
+		this("Vinayak",100000,"v@v.com");
+	}
+	
+}

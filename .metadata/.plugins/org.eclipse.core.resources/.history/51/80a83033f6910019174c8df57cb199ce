@@ -1,0 +1,11 @@
+package com.VipCustomer;
+
+public class Main {
+
+	public static void main(String[] args) {
+	VipCustomer vp=new VipCustomer();
+	System.out.println(vp.getName());
+
+	}
+
+}

@@ -1,29 +1,49 @@
-package com.LargestPrime;
+package com.PaintJob;
 
-public class LargestPrime {
+public class PaintJob {
 	
-	public static int getLargestPrime(int number)
+	public static int getBucketCount(double width,double height, double arePerBucket, int extrabucket)
 	{
-		if(number>0)
+		if(width>0&&height>0&&arePerBucket>0&&extrabucket>=0)
 		{
-			int temp=0;
-			for(int i=1;i<number;i++)
+			int count=1,calc;
+			boolean flag=true;
+			int wall_area=width*height;
+			while(flag)
 			{
-				if(number%i==0)
+				calc=arePerBucket*count;
+				if(calc>wall_area)
 				{
-					temp=i;
+					return count-extrabucket;
 				}
+				count++;
 			}
-			if(temp==1)
-			{
-				return number;
-			}
-			return temp;
 		}
 		else
 		{
 			return -1;
 		}
 	}
-
+	public static int getBucketCount(double width,double height, double arePerBucket)
+	{
+		if(width>0&&height>0&&arePerBucket>0)
+		{
+			int count=1,calc;
+			boolean flag=true;
+			int wall_area=width*height;
+			while(flag)
+			{
+				calc=arePerBucket*count;
+				if(calc>wall_area)
+				{
+					return count;
+				}
+				count++;
+			}
+		}
+		else
+		{
+			return -1;
+		}
+	}
 }
