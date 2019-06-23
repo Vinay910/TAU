@@ -1,0 +1,23 @@
+package com.PoolArea;
+
+public class Rectangle {
+	
+	private double width,length;
+	public Rectangle(double width,double height)
+	{
+		if(width<0)
+		{
+			this.width=0;
+		}
+		if(height<0)
+		{
+			this.length=0;
+		}
+		else
+		{
+			this.length=height;
+			this.width=width;
+		}
+	}
+
+}

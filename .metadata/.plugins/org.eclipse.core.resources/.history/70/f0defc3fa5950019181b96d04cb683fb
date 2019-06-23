@@ -1,0 +1,16 @@
+package com.HamBurger;
+
+public class DeluxeHamburger extends HamBurger {
+	
+	private int coke;
+	private int chips;
+	public DeluxeHamburger(String breadRollType, String meat, double basePrice, String name, int coke, int chips) {
+		super(breadRollType, meat, basePrice, name);
+		this.coke = coke;
+		this.chips = chips;
+	}
+	
+	
+	
+
+}

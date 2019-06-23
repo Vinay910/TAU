@@ -1,0 +1,15 @@
+package com.Car;
+
+public class Car {
+	
+	private int wheels;
+	private int doors;
+	private String color;
+	private String modal;
+	public Car(int wheels.int doors,String color,String modal )
+	{
+		
+		
+	}
+
+}

@@ -1,0 +1,40 @@
+package com.HamBurger;
+
+public class HealthyBurger extends HamBurger{
+	
+	private int kiwi;
+	private int pineapple;
+	private double price;
+	public HealthyBurger(String meat, double basePrice, String name, int kiwi, int pineapple) {
+		super("Brown Bread",meat, basePrice, name);
+		this.kiwi = kiwi;
+		this.pineapple = pineapple;
+	}
+	private double getBaseprice()
+	{
+		price=additionPrice();
+		return price;
+	}
+	public double additionPrice()
+	{
+		price=getBaseprice();
+		if(pineapple>0)
+		{
+			price=price+1;
+		}
+		if(kiwi>0)
+		{
+			price=price+1;
+		}
+		return price;
+	}
+	public void setKiwi(int kiwi) {
+		this.kiwi = kiwi;
+	}
+	public void setPineapple(int pineapple) {
+		this.pineapple = pineapple;
+	}
+	
+ 
+}
+

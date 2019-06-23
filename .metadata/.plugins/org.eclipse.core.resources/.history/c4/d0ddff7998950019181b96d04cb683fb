@@ -1,0 +1,163 @@
+package com.Car;
+
+public class Car {
+	
+	private int wheels;
+	private int doors;
+	private String color;
+	private String modal;
+	private int cylinder;
+	private boolean engine;
+	public Car(String color,String modal,int cylinder)
+	{
+		engine=true;
+		this.wheels=4;
+		this.color=color;
+		this.doors=4;
+		this.modal=modal;
+		this.cylinder=cylinder;
+	}
+	public int getWheels() {
+		return wheels;
+	}
+	public int getDoors() {
+		return doors;
+	}
+	public String getColor() {
+		return color;
+	}
+	public String getModal() {
+		return modal;
+	}
+	public int getCylinder() {
+		return cylinder;
+	}
+	public boolean isEngine() {
+		return engine;
+	}
+	
+	public boolean startEngine()
+	{
+		engine=true;
+		System.out.println("Car Engine Started");
+		return engine;
+		
+	}
+	public boolean stopEngine()
+	{
+		engine=false;
+		System.out.println("Car Engine Stoping");
+		return engine;
+		
+	}
+	public void accelarate()
+	{
+		System.out.println("Car is accelarating");
+	}
+	public void brake()
+	{
+		System.out.println("Car is de-accelarating");
+	}
+	
+public class Discovery extends Car
+{
+	
+	public Discovery()
+	{
+		super("Black", "XX96",4);
+	}
+	
+	public boolean startEngine()
+	{
+		engine=true;
+		System.out.println("Discovery Engine Started");
+		return engine;
+		
+	}
+	public boolean stopEngine()
+	{
+		engine=false;
+		System.out.println("Discovery Engine Stoping");
+		return engine;
+		
+	}
+	public void accelarate()
+	{
+		System.out.println("Discovery is accelarating");
+	}
+	public void brake()
+	{
+		System.out.println("Discovery is de-accelarating");
+	}
+	
+}
+public class Thar extends Car
+{
+	
+	public Thar()
+	{
+		super("Black", "Thar",4);
+	}
+	
+	public boolean startEngine()
+	{
+		engine=true;
+		System.out.println("Thar Engine Started");
+		return engine;
+		
+	}
+	public boolean stopEngine()
+	{
+		engine=false;
+		System.out.println("Thar Engine Stoping");
+		return engine;
+		
+	}
+	public void accelarate()
+	{
+		System.out.println("Thar is accelarating");
+	}
+	public void brake()
+	{
+		System.out.println("Thar is de-accelarating");
+	}
+	
+}
+public class Safari extends Car
+{
+	
+	public Safari()
+	{
+		super("Black", "Safari",4);
+	}
+	
+	public boolean startEngine()
+	{
+		engine=true;
+		System.out.println("Safari Engine Started");
+		return engine;
+		
+	}
+	public boolean stopEngine()
+	{
+		engine=false;
+		System.out.println("Safari Engine Stoping");
+		return engine;
+		
+	}
+	public void accelarate()
+	{
+		System.out.println("Safari is accelarating");
+	}
+	public void brake()
+	{
+		System.out.println("Safari is de-accelarating");
+	}
+	
+}
+public static void main(String args[])
+{
+	Car a=new Thar();
+	a.accelarate();
+}
+}

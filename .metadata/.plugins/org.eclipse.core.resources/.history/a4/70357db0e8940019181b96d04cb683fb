@@ -1,0 +1,27 @@
+package com.Vehicle;
+
+public class Vehicle {
+	
+	private String name;
+	private String size;
+	private int currentVelocity;
+	private int currentdirection;
+	public Vehicle(String name, String size) {
+		this.name = name;
+		this.size = size;
+		this.currentdirection=0;
+		this.currentVelocity=0;
+	}
+	
+	public void steer(int direction)
+	{
+		this.currentdirection+=direction;
+		System.out.println("Vehical direction is "+currentdirection+" degrees");
+	}
+	public void move(int velocity,int direction)
+	{
+		this.currentdirection=velocity;
+		this.currentdirection=direction;
+	}
+
+}

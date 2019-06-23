@@ -1,0 +1,34 @@
+package com.Car;
+
+public class Discovery extends Car
+{
+	
+	public Discovery()
+	{
+		super("Black", "XX96",4);
+	}
+	
+	public boolean startEngine()
+	{
+		engine=true;
+		System.out.println("Discovery Engine Started");
+		return engine;
+		
+	}
+	public boolean stopEngine()
+	{
+		engine=false;
+		System.out.println("Discovery Engine Stoping");
+		return engine;
+		
+	}
+	public void accelarate()
+	{
+		System.out.println("Discovery is accelarating");
+	}
+	public void brake()
+	{
+		System.out.println("Discovery is de-accelarating");
+	}
+	
+}

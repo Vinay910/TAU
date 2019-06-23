@@ -1,0 +1,14 @@
+package com.HamBurger;
+
+public class HealthyBurger extends HamBurger{
+	
+	private int kiwi;
+	private int pineapple;
+	
+	public HealthyBurger()
+	{
+		super("Brown rype", getMeat(), getName(), getBasePrice());
+		
+	}
+
+}

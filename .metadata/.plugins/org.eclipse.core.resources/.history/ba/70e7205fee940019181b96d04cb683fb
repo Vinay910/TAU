@@ -1,0 +1,14 @@
+package com.Vehicle;
+
+public class SUV extends Car {
+	
+	private int roadService;
+
+	public SUV(int currentgear,
+			int roadService) {
+		super("SUV", "4X4", 4, 4, 4, false, currentgear);
+		this.roadService = roadService;
+	}
+	
+	
+}

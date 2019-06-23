@@ -1,0 +1,12 @@
+package com.Cylinder;
+
+public class Cylcinder extends Circle{
+	
+	private double height;
+	public Cylcinder(double radius,double height)
+	{
+		super(radius);
+		
+	}
+
+}

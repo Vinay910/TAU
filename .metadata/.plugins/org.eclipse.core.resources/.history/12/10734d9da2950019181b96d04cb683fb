@@ -1,0 +1,39 @@
+package com.HamBurger;
+
+public class HamBurger {
+	
+	private String breadRollType;
+	private String meat;
+	private int lettuce;
+	private int tomato;
+	private int carrot;
+	private int potato;
+	private double basePrice;
+	public HamBurger(String breadRollType,String meat,double basePrice)
+	{
+		this.basePrice=basePrice;
+		this.meat=meat;
+		this.breadRollType=breadRollType;
+	}
+	public double additionPrice()
+	{
+		if(lettuce>0)
+		{
+			basePrice=basePrice+1;
+		}
+		if(tomato>0)
+		{
+			basePrice=basePrice+1;
+		}
+		if(carrot>0)
+		{
+			basePrice=basePrice+1;
+		}
+		if(potato>0)
+		{
+			basePrice=basePrice+1;
+		}
+		return basePrice;
+	}
+
+}

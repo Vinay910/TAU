@@ -1,0 +1,12 @@
+package com.Room;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Dimensions dimensions=new Dimensions(100, 100);
+		Door door =new Door("RED", true, 1, dimensions);
+		Room room =new Room(door, chair, bed, almirah, arzoo);
+
+	}
+
+}
